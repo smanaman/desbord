@@ -1,0 +1,103 @@
+  <div class="right"></div>
+    <div class="center">
+      <div class="center_under_1">
+        <div class="first"></div>
+        <div class="first_2"></div>
+        <div class="first_3"></div>
+      </div>
+      <div class="center_under_2">
+        <div class="chart_1"></div>
+      </div>
+      <div class="center_under_3">
+        <div class="box_chart"></div>
+        <div class="box_chart_2"></div>
+      </div>
+    </div>
+    <div class="left"></div>
+
+
+    .right{
+        width: 18%;
+        height: 715px;
+        border: 1px solid rgb(244, 238, 238);
+        display: flex;
+        background-color: black;
+      
+    }
+    .center{
+        width: 57%;
+        height: 800px;
+        border: 1px solid rgb(254, 254, 254);
+        
+        
+    }
+    .left{
+        width: 24%;
+        height: 750px;
+        border: 1px solid rgb(254, 254, 254);
+    
+    }
+    .center_under_1{
+        width: 100%;
+        height: 150px;
+        border: 1px solid rgb(254, 254, 254);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .first{
+        width: 30%;
+        height: 90%;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 20px;
+    
+    }
+    .first_2{
+        width: 30%;
+        height: 90%;
+        border: 1px solid rgb(254, 254, 254);
+    border-radius: 20px;
+    }
+    .first_3{
+        width: 30%;
+        height: 90%;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 20px;
+    
+    }
+    .center_under_2{
+        width: 100%;
+        height: 350px;
+        border: 1px solid rgb(254, 254, 254);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chart_1{
+        width: 800px;
+        height: 330px;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 20px;
+    }
+    .center_under_3{
+        width: 100%;
+        height: 40%;
+        border: 1px solid rgb(254, 254, 254);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .box_chart{
+        width: 45%;
+        height: 90%;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 20px;
+    
+    }
+    .box_chart_2{
+        width: 45%;
+        height: 90%;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 20px;
+    
+    }

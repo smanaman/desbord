@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  #chartdiv {
+    width: 100%;
+    height: 100%;
+    /* max-width: 100%; */
+    background-color: transparent;
+
+  }
+</style>
+
+<body>
+  
+  <div class="nav">
+    <div class="nav_right">
+      <h3>DASHBORD</h3>
+    </div>
+    <div class="nav_left">
+   
+     <div class="searh"> <input type="text" class="input_sarch" name="" id="" placeholder="scarch"></div>
+     <div class="all_icon">
+     <div class="icon_img"><span class="material-symbols-outlined">
+        search
+        </span></div>
+      <div class="icon_img"><span class="material-symbols-outlined">
+        mail
+        </span></div>
+      <div class="icon_img"><span class="material-symbols-outlined">
+        notifications
+        </span></div>
+      <div class="icon_img"><span class="material-symbols-outlined">
+        settings
+        </span></div>
+      </div>
+    </div>
+   <div class="proplus"> <div class="pro"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aEecHrAMSX2eIR0MP1JZXdlfQI5etLc57A&s" alt="" width="100%"
+    height="100%"></div></div>
+   <div class="boo"> <button class="boom"><span class="material-symbols-outlined">
+      menu
+      </span></button>
+    </div>
+  </div>
+  <div class="continer">
+    <div class="right">
+      <div class="right_1">
+        <h3 class="h3">CRM Dasbord</h3>
+      </div>
+      <div class="right_2">
+        <div class="profile">
+          <div class="pro_1"><span class="material-symbols-outlined">
+              person
+            </span> </div>
+          <div class="pro_2">
+            <p>PROFILE</p>
+          </div>
+        </div>
+      </div>
+      <div class="right_2">
+        <div class="profile">
+          <div class="pro_1"><span class="material-symbols-outlined">
+              finance
+            </span></div>
+          <div class="pro_2">
+            <p>REPORT</p>
+          </div>
+        </div>
+      </div>
+      <div class="right_text">
+        <div class="text">
+          <p>Graphs</p>
+        </div>
+
+      </div>
+      <div class="right_text_2">
+        <div class="text">
+          <p>Texts</p>
+        </div>
+
+      </div>
+
+      <div class="chanal">
+        <div class="chanal_icon"><span class="material-symbols-outlined">
+            campaign
+          </span></div>
+        <div class="chanal_text">
+          <p>channal</p>
+        </div>
+      </div>
+<div class="email">
+  <div class="email_2">Email</div>
+</div>
+<div class="email_second">
+  <div class="email_2">Phone call</div>
+</div>
+      <div class="butten"><button class="but"><span class="login">login</span><span
+            class="material-symbols-outlined span_2">
+            login
+          </span></button>
+      </div>
+    </div>
+    <div class="center">
+      <div class="part_1_center">
+        <div class="top_div_center">
+          <div class="top_1"><div class="luli"></div></div>
+          <div class="top_2"><div class="luli"></div></div>
+          <div class="top_3"><div class="luli"></div></div>
+          <div class="top_1"><div class="luli"></div></div>
+          <div class="top_2"><div class="luli"></div></div>
+          <div class="top_3"><div class="luli"></div></div>
+        </div>
+        <div class="chart_hading_1">Tickets Create vs Tickets Solved</div>
+        <div class="second_div_center">
+          <div class="second_under">
+            <div id="chart"></div>
+          </div>
+        </div>
+        <div class="chart_hading_2">
+          <div class="tickets">Tickets By Type</div>
+          <div class="tickets_2"> New Tickets Vs Returned Tickets</div>
+        </div>
+
+        <div class="last_center">
+
+          <div class="last_1">
+            <div class="" id="chart_2"></div>
+          </div>
+          <div class="last_2">
+            <div class="" id="chart_3"></div>
+          </div>
+        </div>
+
+        <div class="coustmar">
+          <div class="coustmar_manu">
+            <div class="number">
+              <div class="number_heading">no.</div>
+              <div class="number_2">1</div>
+              <div class="number_2">2</div>
+              <div class="number_2">3</div>
+              <div class="number_2">4</div>
+              <!-- <div class="number_2"></div> -->
+
+            </div>
+            <div class="customer_icon">
+              <div class="customer_heading">coustmer</div>
+              <div class="customer_icon_2"><div class="round">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scarlett-johansson-attends-the-premiere-of-illuminations-news-photo-1639390369.jpg" width="100%" height="100%" alt="">
+              </div></div>
+              <div class="customer_icon_2"><div class="round">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scarlett-johansson-attends-the-premiere-of-illuminations-news-photo-1639390369.jpg" width="100%" height="100%" alt="">
+              </div></div>
+              <div class="customer_icon_2"><div class="round">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scarlett-johansson-attends-the-premiere-of-illuminations-news-photo-1639390369.jpg" width="100%" height="100%" alt="">
+              </div></div>
+              <div class="customer_icon_2"><div class="round">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scarlett-johansson-attends-the-premiere-of-illuminations-news-photo-1639390369.jpg" width="100%" height="100%" alt="">
+              </div></div>
+              <!-- <div class="customer_icon_2"></div> -->
+              <!-- <div class="customer_icon_2"></div> -->
+
+
+            </div>
+            <div class="name">
+              <div class="name_heading">coustmer name</div>
+              <div class="name_2">scarlett johansson</div>
+              <div class="name_2">scarlett johansson</div>
+              <div class="name_2">scarlett johansson</div>
+              <div class="name_2">scarlett johansson</div>
+              <!-- <div class="name_2"></div> -->
+              <!-- <div class="name_2"></div> -->
+            </div>
+            <div class="ticket_buyer">
+              <div class="buy_heading">ticket</div>
+              <div class="buy">10</div>
+              <div class="buy">40</div>
+              <div class="buy">50</div>
+              <div class="buy">100</div>
+              <!-- <div class="buy"></div> -->
+              <!-- <div class="buy"></div> -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="part_2_center">
+        <div class="part_2_first">
+          <div id="chartdiv"></div>
+        </div>
+        <div class="part_2_second">
+          <div id="chart_4"></div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  
+
+        
+  <!-- button -->
+   <script>
+     $(document).ready(function (){
+      $('.boom').click(function () {
+      $('.right').toggle('db');
+      
+    })
+
+    $('.boom').click(function () {
+      $('.center').toggleClass('center_santro');
+      
+    })
+    $('.boom').click(function () {
+      $('.paart_1_center').toggleClass('part_12_center');
+      
+    })
+    $('.boom').click(function () {
+      $('.part_2_center').toggleClass('part_2_sentro');
+      
+    })
+     })
+   </script>
+ 
+  <!-- chaet1 -->
+  <script>
+
+    var options = {
+      series: [{
+        name: 'series1',
+        data: [31, 40, 28, 51, 42, 109, 100]
+      }, {
+        name: 'series2',
+        data: [11, 32, 45, 32, 34, 52, 41]
+      }],
+      chart: {
+        height: 350,
+        type: 'area'
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'smooth'
+      },
+      xaxis: {
+        type: 'datetime',
+        categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+      },
+      tooltip: {
+        x: {
+          format: 'dd/MM/yy HH:mm'
+        },
+      },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  </script>
+  <!-- chart2 -->
+  <script>
+
+
+
+
+    var options = {
+      series: [44, 55, 13, 33],
+      chart: {
+        width: 380,
+        type: 'donut',
+      },
+      dataLabels: {
+        enabled: false
+      },
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            show: false
+          }
+        }
+      }],
+      legend: {
+        position: 'right',
+        offsetY: 0,
+        height: 230,
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart_2"), options);
+    chart.render();
+
+
+    function appendData() {
+      var arr = chart.w.globals.series.slice()
+      arr.push(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
+      return arr;
+    }
+
+    function removeData() {
+      var arr = chart.w.globals.series.slice()
+      arr.pop()
+      return arr;
+    }
+
+    function randomize() {
+      return chart.w.globals.series.map(function () {
+        return Math.floor(Math.random() * (100 - 1 + 1)) + 1
+      })
+    }
+
+
+
+  </script>
+  <!-- chart3 -->
+  <script>
+
+    var options = {
+      series: [76, 67, 61, 90],
+      chart: {
+        height: 390,
+        type: 'radialBar',
+      },
+      plotOptions: {
+        radialBar: {
+          offsetY: 0,
+          startAngle: 0,
+          endAngle: 270,
+          hollow: {
+            margin: 5,
+            size: '30%',
+            background: 'transparent',
+            image: undefined,
+          },
+          dataLabels: {
+            name: {
+              show: false,
+            },
+            value: {
+              show: false,
+            }
+          },
+          barLabels: {
+            enabled: true,
+            useSeriesColors: true,
+            offsetX: -8,
+            fontSize: '16px',
+            formatter: function (seriesName, opts) {
+              return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]
+            },
+          },
+        }
+      },
+      colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
+      labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          legend: {
+            show: false
+          }
+        }
+      }]
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart_3"), options);
+    chart.render();
+
+
+
+
+
+  </script>
+
+  <!-- Chart4  -->
+  <script>
+    am5.ready(function () {
+
+      // Create root element
+      // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+      var root = am5.Root.new("chartdiv");
+
+
+      // Set themes
+      // https://www.amcharts.com/docs/v5/concepts/themes/
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
+
+
+      // Create the map chart
+      // https://www.amcharts.com/docs/v5/charts/map-chart/
+      var chart = root.container.children.push(am5map.MapChart.new(root, {
+        panX: "rotateX",
+        panY: "rotateY",
+        projection: am5map.geoOrthographic(),
+        paddingBottom: 20,
+        paddingTop: 20,
+        paddingLeft: 20,
+        paddingRight: 20
+      }));
+
+
+
+      // Create main polygon series for countries
+      // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+      var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+        geoJSON: am5geodata_worldLow
+      }));
+
+      polygonSeries.mapPolygons.template.setAll({
+        tooltipText: "{name}",
+        toggleKey: "active",
+        interactive: true
+      });
+
+      polygonSeries.mapPolygons.template.states.create("hover", {
+        fill: root.interfaceColors.get("primaryButtonHover")
+      });
+
+      polygonSeries.mapPolygons.template.states.create("active", {
+        fill: root.interfaceColors.get("primaryButtonHover")
+      });
+
+
+      // Create series for background fill
+      // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
+      var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
+      backgroundSeries.mapPolygons.template.setAll({
+        fill: root.interfaceColors.get("alternativeBackground"),
+        fillOpacity: 0.1,
+        strokeOpacity: 0
+      });
+      backgroundSeries.data.push({
+        geometry: am5map.getGeoRectangle(90, 180, -90, -180)
+      });
+
+      var graticuleSeries = chart.series.unshift(
+        am5map.GraticuleSeries.new(root, {
+          step: 10
+        })
+      );
+
+      graticuleSeries.mapLines.template.set("strokeOpacity", 0.1)
+
+      // Set up events
+      var previousPolygon;
+
+      polygonSeries.mapPolygons.template.on("active", function (active, target) {
+        if (previousPolygon && previousPolygon != target) {
+          previousPolygon.set("active", false);
+        }
+        if (target.get("active")) {
+          selectCountry(target.dataItem.get("id"));
+        }
+        previousPolygon = target;
+      });
+
+      function selectCountry(id) {
+        var dataItem = polygonSeries.getDataItemById(id);
+        var target = dataItem.get("mapPolygon");
+        if (target) {
+          var centroid = target.geoCentroid();
+          if (centroid) {
+            chart.animate({ key: "rotationX", to: -centroid.longitude, duration: 1500, easing: am5.ease.inOut(am5.ease.cubic) });
+            chart.animate({ key: "rotationY", to: -centroid.latitude, duration: 1500, easing: am5.ease.inOut(am5.ease.cubic) });
+          }
+        }
+      }
+
+      // Uncomment this to pre-center the globe on a country when it loads
+      //polygonSeries.events.on("datavalidated", function() {
+      //  selectCountry("AU");
+      //});
+
+
+      // Make stuff animate on load
+      chart.appear(1000, 100);
+
+    }); // end am5.ready()
+  </script>
+  <!-- chart5 -->
+  <script>
+
+
+    var options = {
+      series: [{
+        name: 'Inflation',
+        data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
+      }],
+      chart: {
+        height: 350,
+        type: 'bar',
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 10,
+          dataLabels: {
+            position: 'top', // top, center, bottom
+          },
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+          return val + "%";
+        },
+        offsetY: -20,
+        style: {
+          fontSize: '12px',
+          colors: ["#304758"]
+        }
+      },
+
+      xaxis: {
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        position: 'top',
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        crosshairs: {
+          fill: {
+            type: 'gradient',
+            gradient: {
+              colorFrom: '#D8E3F0',
+              colorTo: '#BED1E6',
+              stops: [0, 100],
+              opacityFrom: 0.4,
+              opacityTo: 0.5,
+            }
+          }
+        },
+        tooltip: {
+          enabled: true,
+        }
+      },
+      yaxis: {
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          show: false,
+          formatter: function (val) {
+            return val + "%";
+          }
+        }
+
+      },
+      title: {
+        text: 'Monthly Inflation in Argentina, 2002',
+        floating: true,
+        offsetY: 330,
+        align: 'center',
+        style: {
+          color: '#444'
+        }
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart_4"), options);
+    chart.render();
+  </script>
+</body>
+
+</html>
