@@ -52,6 +52,9 @@
     </div>
    <div class="proplus"> <div class="pro"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aEecHrAMSX2eIR0MP1JZXdlfQI5etLc57A&s" alt="" width="100%"
     height="100%"></div></div>
+    <div class="day">
+      <div class="day_2"></div>
+    </div>
    <div class="boo"> <button class="boom"><span class="material-symbols-outlined">
       menu
       </span></button>
@@ -109,11 +112,12 @@
 <div class="email_second">
   <div class="email_2">Phone call</div>
 </div>
-      <div class="butten"><button class="but"><span class="login">login</span><span
+   <a href="./index2.html">  <div class="butten"><button class="but"><span class="login">login</span><span
             class="material-symbols-outlined span_2">
             login
           </span></button>
       </div>
+    </a> 
     </div>
     <div class="center">
       <div class="part_1_center">
@@ -149,7 +153,7 @@
         <div class="coustmar">
           <div class="coustmar_manu">
             <div class="number">
-              <div class="number_heading">no.</div>
+              <div class="number_heading" >no.</div>
               <div class="number_2">1</div>
               <div class="number_2">2</div>
               <div class="number_2">3</div>
@@ -236,8 +240,107 @@
       $('.part_2_center').toggleClass('part_2_sentro');
       
     })
+ 
      })
    </script>
+   <script>
+    $(document).ready(function(){
+
+      $('.day').click(function(){
+   $('body').toggleClass('bobo')
+ 
+    })
+    $('.day').click(function(){
+      $('.right').toggleClass('right_color')
+    })
+    $('.day').click(function(){
+      $('.all_icon').toggleClass('all_icon_2')
+    })
+    $('.day').click(function(){
+      $('.input_sarch').toggleClass('input_sarch_2')
+    })
+    $('.day').click(function(){
+      $('.nav_right').toggleClass('nav_right_2')
+    })
+ 
+    })
+   </script>
+   <script>
+    $(document).ready(function(){
+      $('.day').click(function(){
+      $('.h3').toggleClass('h3color')
+    })
+    $('.day').click(function(){
+      $('.second_under').toggleClass('chart_color')
+    })
+    $('.day').click(function(){
+      $('#chart_2').toggleClass('chart_color')
+    })
+    $('.day').click(function(){
+      $('#chart_3').toggleClass('chart_color')
+    })
+   
+    })
+   </script>
+   <script>
+    $(document).ready(function(){
+      $('.day').click(function(){
+      $('.part_2_first').toggleClass('punam')
+     
+    })
+    $('.day').click(function(){
+      $('#chart_4').toggleClass('punam')
+     
+    })
+    $('.day').click(function(){
+      $('.day_2').toggleClass('day_3')
+     
+    })
+    $('.day').click(function(){
+      $('.boom').toggleClass('boom_2')
+     
+    })
+      
+    })
+   </script>
+   <script>
+    $(document).ready(function(){
+      $('.day').click(function(){
+      $('.number_2').toggleClass('num_second')
+     
+    })
+    $('.day').click(function(){
+      $('.name_2').toggleClass('name_34')
+     
+    })
+    $('.day').click(function(){
+      $('.buy').toggleClass('bought')
+     
+    })
+    $('.day').click(function(){
+      $('.number_heading').toggleClass('number_heading_2')
+     
+    })
+    $('.day').click(function(){
+      $('.customer_heading').toggleClass('com')
+     
+    })
+    $('.day').click(function(){
+      $('.name_heading').toggleClass('com_2')
+     
+    })
+    $('.day').click(function(){
+      $('.buy_heading').toggleClass('com_3')
+     
+    })
+    $('.day').click(function(){
+      $('.nav').toggleClass('nav_back')
+     
+    })
+    })
+   </script>
+
+  
  
   <!-- chaet1 -->
   <script>
@@ -586,6 +689,8 @@
     var chart = new ApexCharts(document.querySelector("#chart_4"), options);
     chart.render();
   </script>
+  <!-- day night -->
+ 
 </body>
 
 </html>
