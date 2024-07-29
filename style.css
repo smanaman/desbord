@@ -212,7 +212,7 @@ margin-left: 5px;
     height: auto;
     border: var(--border);
     position: absolute;
-    left: 290px;
+    left: 20%;
     display: flex;
     
 }
@@ -457,10 +457,10 @@ align-items: center;
 
 .part_2_center {
     width: 23.5%;
-    height: 700px;
+    height: 100vh;
     /* border: 5px solid rgb(91, 18, 201); */
     position: fixed;
-    right: 1px;
+    right: 1%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
